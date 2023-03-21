@@ -30,9 +30,9 @@ def get_info():
 def send_email(receiver,subject,message):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login('aditya.durugkar.aids.2021@vpkbiet.org','AdityaD@2003')
+    server.login('your_email_id','yourpasswd')
     email = EmailMessage()
-    email['From']='aditya.durugkar.aids.2021@vpkbiet.org'
+    email['From']='senders_email'
     email['To']=receiver
     email['Subject']=subject
     email.set_content(message)
@@ -40,7 +40,7 @@ def send_email(receiver,subject,message):
 
 
 email_list = {
-    'rick':'dengleprathamesh942@gmail.com',
+    'rick':'friend1@gmail.com',
     
 }
 
