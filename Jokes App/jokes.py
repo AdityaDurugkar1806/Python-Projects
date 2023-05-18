@@ -20,6 +20,9 @@ def main():
         joke = response.json()['joke']
         st.write(joke)  
         text_to_speech(joke)  
+    
+   	
+
 
     
 if __name__ == "__main__":
